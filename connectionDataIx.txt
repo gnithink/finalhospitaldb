@@ -4,7 +4,7 @@ $server = "ix-dev.cs.uoregon.edu";
 $dbname ="hospital";
 $user = "guest";
 $pass = "guest";
-$port="3869";
+$port="3992";
 
 echo "hello";
 

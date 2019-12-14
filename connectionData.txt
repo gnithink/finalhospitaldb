@@ -1,0 +1,12 @@
+
+<?php
+
+$server = "localhost";
+$dbname ="hospital";
+$user = "root";
+$pass = "root";
+$port= "8889";
+
+echo "hello";
+
+?>

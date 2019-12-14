@@ -1,2 +1,2 @@
 # finalhospitaldb
-hospital database
+hospital database using php, mysql and html

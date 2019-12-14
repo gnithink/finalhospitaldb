@@ -1,10 +1,10 @@
 <?php
 
 $server = "ix-dev.cs.uoregon.edu";
-$dbname ="hospital";
+$dbname = "hospital";
 $user = "guest";
 $pass = "guest";
-$port="3992";
+$port="3980";
 
 echo "hello";
 

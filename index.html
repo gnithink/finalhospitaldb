@@ -7,10 +7,43 @@
 
 <h3>Connecting to hospital database using MySQL/PHP</h3>
 
+<hr>
+<p>
+Application 1 :Please enter a patient ID Number to check out from the hospital.
+eg: P00000001 (Note PatientIDNumber should be 9 digits)
+<p>
+
+<form action="patientcheckout.php" method="POST">
+
+<input type="text" name= "number" > <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+<hr>
 
 <hr>
 <p>
-Application 1 :Please enter a patient name who you think might be in the data base.
+Application 2 :Please enter a patient details.
+<p>
+
+<hr>
+<form action="patientcheckin.php" method="POST">
+
+<p>Patient ID Number: format P000000_ _</p><input type="text" name="PatientIDNumber"> 
+<p>Patient Name</p><input type="text" name="PatientName"> 
+<p>Date Of Birth: format year-month(eg:06)-date</p><input type="text" name="DateOfBirth"> 
+<p>Blood Type</p><input type="text" name="BloodType"> 
+<p>Sex</p><input type="text" name="Sex"> 
+<p>Address </p><input type="text" name="Address"><br>
+<p>Phone number</p><input type="text" name="PhoneNumber"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+<hr>
+
+<hr>
+<p>
+Application 3 :Please enter a patient name who you think might be in the data base.
 eg: Daniel Smith, John Chan etc
 <p>
 
@@ -25,7 +58,7 @@ eg: Daniel Smith, John Chan etc
 
 <hr>
 <p>
-Application 2 : To see a list of patients and their details in the hospital press the submit button.
+Application 4 : To see a list of patients and their details in the hospital press the submit button.
 <p>
 
 <form action="allpatients.php" method="POST">
@@ -37,7 +70,7 @@ Application 2 : To see a list of patients and their details in the hospital pres
 
 <hr>
 <p>
-Application 3 :Press submit to see a list of patients for whom cash payment was made.
+Application 5 :Press submit to see a list of patients for whom cash payment was made.
 <p>
 
 <form action="cashpayment.php" method="POST">
@@ -48,7 +81,7 @@ Application 3 :Press submit to see a list of patients for whom cash payment was 
 
 <hr>
 <p>
-Application 4 :Press submit to see a list of patients for whom check payment was made.
+Application 6 :Press submit to see a list of patients for whom check payment was made.
 <p>
 
 <form action="checkpayment.php" method="POST">
@@ -59,7 +92,7 @@ Application 4 :Press submit to see a list of patients for whom check payment was
 
 <hr>
 <p>
-Application 5 :Press submit to see a list of patients for whom check payment was made.
+Application 7 :Press submit to see a list of patients for whom check payment was made.
 <p>
 
 <form action="debitcreditpayment.php" method="POST">
@@ -68,20 +101,20 @@ Application 5 :Press submit to see a list of patients for whom check payment was
 </form>
 <hr>
 
-<!--
+
 <hr>
 <p>
-Application 1 :Please enter a patient name who you think might be in the data base.
+Application 8 :Please enter a patient name to get a medical record.
 eg: Daniel Smith, John Chan etc
 <p>
 
-<form action="patientview.php" method="POST">
+<form action="medicalrecord.php" method="POST">
 
 <input type="text" name="patientname"> <br>
 <input type="submit" value="submit">
 <input type="reset" value="erase">
 </form>
-<hr> -->
+
 
 
 

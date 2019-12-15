@@ -19,9 +19,19 @@ or die('Error connecting to MySQL server.');
   
   
 <?php
-$query = "SELECT p.PatientIDNumber, p.PatientName, p.DateOfBirth, 
-        p.BloodType, p.Sex, p.Address, p.PhoneNumber
-          FROM hospital.Patient p ";
+
+$patientname = $_POST['patientname'];
+
+$patientname = mysqli_real_escape_string($conn, $patientname);
+// this is a small attempt to avoid SQL injection
+// better to use prepared statements
+
+
+$query = "select PatientName, Category, Description, DateOfRecord
+from Patient join MedicalRecord using(PatientIDNumber)
+Where PatientName LIKE";
+$query = $query.'"'.$patientname.'" ;';
+
 ?>
 
 <p>
@@ -44,7 +54,7 @@ print "<pre>";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
-    print "$row[PatientIDNumber]  $row[PatientName] $row[DateOfBirth] $row[BloodType] $row[Sex] $row[Address] $row[PhoneNumber]";
+    print "$row[PatientName] $row[Category] $row[Description] $row[DateOfRecord]" ;
   }
 print "</pre>";
 
